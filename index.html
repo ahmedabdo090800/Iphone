@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Iphone</title>
 </head>
-<body>
+<body id="o" style="background-color:royalblue ">
     <div class="container">
         <header>
             <a href="#"> <img src="image/logo.png" class="logo" alt=""></a>
@@ -17,6 +18,8 @@
                 <li><a href="#">News</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+          <button onclick="mytoggle()"><i class="fa-solid fa-bars"></i></button>
+
     
             </ul>
         </header>
@@ -27,21 +30,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum obcaecati doloribus maiores officia nulla odit nostrum quibusdam! Ullam veniam temporibus repudiandae magni, voluptatibus minima eos delectus non quos natus.</p>
                 <a href="#">All product</a>
             </div>
-            <div class="image">
-                <img id="img_changer" src="image/0.png" alt="">
+            <div class="toggle " style="display: none;" 
+            >
+            <h4 class="head_toggle">Change your background</h4>
+            <div class="colors_toggle" style="display: flex; align-items: center; justify-content: space-around;">
+                <div class="color1" onclick="changer('#663399')" id="btn1"> <button></button></div>
+                <div class="color2" onclick="changer('#20cf63')" id="btn2"> <button></button></div>
+                <div class="color3" onclick="changer('#cf209b')" id="btn3"> <button></button></div>
+                <div class="color4" onclick="changer('#20cfb2')" id="btn4"> <button></button></div>
             </div>
-        </div>
-        <div class="icons">
-            <img onclick="changer(this.src);golden()"  src="image/0.png" >
-            <img onclick="changer(this.src);changer2('#247ec8')" src="image/1.png" >
-            <img onclick="changer(this.src);changer2('#1e1e1e')" src="image/2.png" >
-            <img onclick="changer(this.src);changer2('#c79b53')" src="image/3.png" >
-            <img onclick="changer(this.src);changer2('#c82525')" src="image/4.png" >
-        </div>
 
-    </div>
+            </div>
+
  
     
-<script src="main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/all.min.js"></script>
 </body>
 </html>
